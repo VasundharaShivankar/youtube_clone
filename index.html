@@ -7,7 +7,7 @@
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
-
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap')
     <style>
         .text-white{
             color: white;
@@ -36,6 +36,62 @@
     <title>Youtube Clone</title>
 </head>
 <body class=" bg-dark">
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="#" style="  font-family: Teko, sans-serif;font-size: xx-large;mx: 0 px;">
+            <img src="./img/youtube_icon.png" style="width:60px ; margin-right: 0%;"/>
+            Youtube
+          </a>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 30px; width:500px">
+            <button class="btn btn-secondary" type="submit" style="border-radius: 70px; height:50px">
+            <img src="./img/zoom.png" style="height:30px" />
+           </button>
+        </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Shorts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Subscriptions</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<br/><br/>
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-4">
@@ -44,30 +100,7 @@
                         <img src="./img/ipl.jpg" class="img-fluid m-1 border-radius">
                         <div class="image-adjust col col-4 container-fluid" style="display: flex">
                             <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
-                            </div>
-                            <div>
-                                <p class="fw-bold text-white d-block padding-top">
-                                    IPL 2020: Data Science of Winning | Dhruv Rathee
-                                </p>
-                                <span class="text-grey">  
-                                    Dhruv Rathee
-                                </span>
-                                <span class="text-grey">  
-                                    1.6M views ● 3 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="video-card col container-fluid">
-                    <div class="image-adjust col col-4 container-fluid">
-                        <img src="./img/ipl.jpg" class="img-fluid m-1 border-radius">
-                        <div class="image-adjust col col-4 container-fluid" style="display: flex">
-                            <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile" />
                             </div>
                             <div>
                                 <p class="fw-bold text-white d-block padding-top">
@@ -90,7 +123,30 @@
                         <img src="./img/israel_palestine.jpg" class="img-fluid m-1 border-radius">
                         <div class="image-adjust col col-4 container-fluid" style="display: flex">
                             <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile" />
+                            </div>
+                            <div>
+                                <p class="fw-bold text-white d-block padding-top">
+                                    IPL 2020: Data Science of Winning | Dhruv Rathee
+                                </p>
+                                <span class="text-grey">  
+                                    Dhruv Rathee
+                                </span>
+                                <span class="text-grey">  
+                                    1.6M views ● 3 years ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-card col container-fluid">
+                    <div class="image-adjust col col-4 container-fluid">
+                        <img src="./img/java_multi_threading.jpg" class="img-fluid m-1 border-radius">
+                        <div class="image-adjust col col-4 container-fluid" style="display: flex">
+                            <div>
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile" />
                             </div>
                             <div>
                                 <p class="fw-bold text-white d-block padding-top">
@@ -112,10 +168,10 @@
             <div class="col-md-4">
                 <div class="video-card col container-fluid">
                     <div class="image-adjust col col-4 container-fluid">
-                        <img src="./img/ipl.jpg" class="img-fluid m-1 border-radius">
+                        <img src="./img/kun_faya_kun.jpg" class="img-fluid m-1 border-radius">
                         <div class="image-adjust col col-4 container-fluid" style="display: flex">
                             <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile" />
                             </div>
                             <div>
                                 <p class="fw-bold text-white d-block padding-top">
@@ -135,10 +191,10 @@
             <div class="col-md-4">
                 <div class="video-card col container-fluid">
                     <div class="image-adjust col col-4 container-fluid">
-                        <img src="./img/ipl.jpg" class="img-fluid m-1 border-radius">
+                        <img src="./img/samira_montage.jpg" class="img-fluid m-1 border-radius">
                         <div class="image-adjust col col-4 container-fluid" style="display: flex">
                             <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile"/>
                             </div>
                             <div>
                                 <p class="fw-bold text-white d-block padding-top">
@@ -158,10 +214,10 @@
             <div class="col-md-4">
                 <div class="video-card col container-fluid">
                     <div class="image-adjust col col-4 container-fluid">
-                        <img src="./img/israel_palestine.jpg" class="img-fluid m-1 border-radius">
+                        <img src="./img/secrets.jpg" class="img-fluid m-1 border-radius">
                         <div class="image-adjust col col-4 container-fluid" style="display: flex">
                             <div>
-                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-1 mx-2 profile" />
+                                <img src="./img/dhruv_profile.jpg" class="img-fluid mt-3 me-2 profile" />
                             </div>
                             <div>
                                 <p class="fw-bold text-white d-block padding-top">
